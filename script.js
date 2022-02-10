@@ -93,7 +93,7 @@ function addTask(name) { // функция отвечает за добавле�
       
         // Если нет, прерываем выполнение функции
         if (!isMoveable) {
-            toLocal()
+            toLocal();
           return;
           
         }
@@ -105,7 +105,7 @@ function addTask(name) { // функция отвечает за добавле�
       
         // Вставляем activeElement перед nextElement
         toDoList.insertBefore(activeElement, nextElement);
-        toLocal()
+        toLocal();
       });
 
       const getNextElement = (cursorPosition, currentElement) => {
@@ -119,7 +119,7 @@ function addTask(name) { // функция отвечает за добавле�
         const nextElement = (cursorPosition < currentElementCenter) ?
             currentElement :
             currentElement.nextElementSibling;
-            toLocal();
+            toLocal(); 
         return nextElement;
       };
       toLocal();
